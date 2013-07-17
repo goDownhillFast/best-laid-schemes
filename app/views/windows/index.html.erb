@@ -1,0 +1,29 @@
+<h1>Listing windows</h1>
+
+<table>
+  <tr>
+    <th>Activity</th>
+    <th>End time</th>
+    <th>Begin time</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% current_window_activities.each do |window| %>
+
+
+  <tr>
+    <td><%= window.activity.name  %></td>
+    <td><%= window.end_time %></td>
+    <td><%= window.begin_time %></td>
+    <td><%= link_to 'Show', window %></td>
+    <td><%= link_to 'Edit', edit_window_path(window) %></td>
+    <td><%= link_to 'Destroy', window, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Window', new_window_path %>

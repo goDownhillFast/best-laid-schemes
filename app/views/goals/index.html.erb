@@ -1,0 +1,27 @@
+<h1>Listing goals</h1>
+
+<table>
+  <tr>
+    <th>Total hours</th>
+    <th>Hours remaining</th>
+    <th>Activity</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @goals.each do |goal| %>
+  <tr>
+    <td><%= goal.total_hours %></td>
+    <td><%= goal.hours_remaining %></td>
+    <td><%= goal.activity_id %></td>
+    <td><%= link_to 'Show', goal %></td>
+    <td><%= link_to 'Edit', edit_goal_path(goal) %></td>
+    <td><%= link_to 'Destroy', goal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Goal', new_goal_path %>

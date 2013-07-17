@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  activity_id: 1
+  end_time: 1.5
+  begin_time: 1.5
+
+two:
+  activity_id: 1
+  end_time: 1.5
+  begin_time: 1.5

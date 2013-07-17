@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Start date:</b>
+  <%= @weekly_plan.start_date %>
+</p>
+
+<p>
+  <b>Number of hours:</b>
+  <%= @weekly_plan.number_of_hours %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @weekly_plan.category_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_weekly_plan_path(@weekly_plan) %> |
+<%= link_to 'Back', weekly_plans_path %>

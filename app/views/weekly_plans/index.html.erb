@@ -1,0 +1,27 @@
+<h1>Listing weekly_plans</h1>
+
+<table>
+  <tr>
+    <th>Start date</th>
+    <th>Number of hours</th>
+    <th>Category</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @weekly_plans.each do |weekly_plan| %>
+  <tr>
+    <td><%= weekly_plan.start_date %></td>
+    <td><%= weekly_plan.number_of_hours %></td>
+    <td><%= weekly_plan.category.name %></td>
+    <td><%= link_to 'Show', weekly_plan %></td>
+    <td><%= link_to 'Edit', edit_weekly_plan_path(weekly_plan) %></td>
+    <td><%= link_to 'Destroy', weekly_plan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Weekly plan', new_weekly_plan_path %>

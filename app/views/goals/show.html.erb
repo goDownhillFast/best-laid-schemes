@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Total hours:</b>
+  <%= @goal.total_hours %>
+</p>
+
+<p>
+  <b>Hours remaining:</b>
+  <%= @goal.hours_remaining %>
+</p>
+
+<p>
+  <b>Activity:</b>
+  <%= @goal.activity_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_goal_path(@goal) %> |
+<%= link_to 'Back', goals_path %>
