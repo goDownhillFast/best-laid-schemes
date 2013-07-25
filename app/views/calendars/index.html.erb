@@ -1,15 +1,38 @@
 <p id="notice"><%= notice %></p>
 
 
-<% @result.each do |key, value| %>
-  <div class="row">
-    <div class="row-8 columns">
-      <div class="large-4 columns">
-        <%= key %>
+<% @result.each do |category_key, category_value| %>
+  <div class="row category">
+    <div class="row">
+      <div class="row-8 columns">
+        <%= category_key %>
       </div>
-      <div class="large-1 columns">
-        <%= value %>
+    </div>
+    <% category_value[:activities].each do |activity_key, activity_value| %>
+      <div class="row">
+        <div class="row-8 columns">
+          <div class="large-4 columns">
+            <%= activity_key %>
+          </div>
+          <div class="large-1 columns">
+            <%= activity_value %>
+          </div>
+        </div>
+      </div>
+
+    <% end %>
+
+    <div class="row">
+      <div class="row-8 columns category-total">
+        <div class="large-4 columns">
+          Total
+        </div>
+        <div class="large-1 columns">
+          <%= category_value[:total] %>
+        </div>
       </div>
     </div>
   </div>
+
+
 <% end %>
