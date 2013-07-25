@@ -1,45 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9b9060d-07b4-437e-ba0f-30817e8b9108" name="Default" comment="" />
+    <list default="true" id="e9b9060d-07b4-437e-ba0f-30817e8b9108" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/activity.rb" afterPath="$PROJECT_DIR$/app/models/activity.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/calendars_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/calendars_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/google_data.rb" afterPath="$PROJECT_DIR$/lib/google_data.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/calendars/index.html.erb" afterPath="$PROJECT_DIR$/app/views/calendars/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/planner.iml" afterPath="$PROJECT_DIR$/.idea/planner.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="planner.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/20130420194132_create_weekly_plans.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1366487854243" ignored="false" />
-    <file path="/Gemfile" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373994184090" ignored="false" />
-    <file path="/a.dummy" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373996454319" ignored="false" />
-    <file path="/routes.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373494295466" ignored="false" />
-    <file path="/calendars_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1366501641367" ignored="false" />
-    <file path="/sessions_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373293370681" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/Gemfile" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373994776950" ignored="false" />
-    <file path="/seeds.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373698448210" ignored="false" />
+    <file path="/Gemfile" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374686891169" ignored="false" />
+    <file path="/a.dummy" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374159570100" ignored="false" />
+    <file path="/routes.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374528678953" ignored="false" />
+    <file path="/calendars_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374544782172" ignored="false" />
+    <file path="/sessions_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374160173261" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/Gemfile" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374687210492" ignored="false" />
+    <file path="/seeds.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374590293088" ignored="false" />
     <file path="/20130422022201_create_windows.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1366600479352" ignored="false" />
     <file path="/window.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1366893662841" ignored="false" />
     <file path="/weekly_plan.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1366894403581" ignored="false" />
     <file path="/calendar_controller_test.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1366604049333" ignored="false" />
     <file path="/calendar_helper.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1366604161712" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/config/routes.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373612213108" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/config/routes.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374529871219" ignored="false" />
     <file path="/omniauth.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1366972513952" ignored="false" />
-    <file path="/activity.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1367070658413" ignored="false" />
+    <file path="/activity.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374590184703" ignored="false" />
     <file path="/goal.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1366695482788" ignored="false" />
-    <file path="/index.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373225432401" ignored="false" />
-    <file path="/*.regexp" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373589841041" ignored="false" />
+    <file path="/index.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374736125254" ignored="false" />
+    <file path="/*.regexp" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374722092806" ignored="false" />
     <file path="/category.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1367070686995" ignored="false" />
     <file path="/task.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1367070642740" ignored="false" />
-    <file path="/application_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373349070068" ignored="false" />
-    <file path="$PROJECT_DIR$/log/development.log" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1366931758983" ignored="false" />
+    <file path="/application_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374760012913" ignored="false" />
+    <file path="$PROJECT_DIR$/log/development.log" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374179903462" ignored="false" />
     <file path="$PROJECT_DIR$/tmp/pids/server.pid" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1366931758983" ignored="false" />
     <file path="/create.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1367001978937" ignored="false" />
-    <file path="/google_data.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1367001759791" ignored="false" />
+    <file path="/google_data.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374244564721" ignored="false" />
     <file path="/event.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1367070555397" ignored="false" />
     <file path="/location.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1367070706038" ignored="false" />
-    <file path="/user.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373553693601" ignored="false" />
-    <file path="/Dummy.txt" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374031064913" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/app/controllers/matchmaker_requests_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1367196631770" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/chromedriver.log" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1367113534749" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/spec/controllers/matchmaker_requests_controller_spec.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373320050220" ignored="false" />
-    <file path="/matchmaker_requests_controller_spec.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1369451807706" ignored="false" />
-    <file path="/matchmaker_requests_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1367115847380" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/app/controllers/match_attempts_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374005159428" ignored="false" />
+    <file path="/user.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374080358022" ignored="false" />
+    <file path="/Dummy.txt" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374722680984" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/controllers/matchmaker_requests_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374521747221" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/chromedriver.log" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374613302425" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/spec/controllers/matchmaker_requests_controller_spec.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374521094711" ignored="false" />
+    <file path="/matchmaker_requests_controller_spec.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374521094711" ignored="false" />
+    <file path="/matchmaker_requests_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374519930382" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/controllers/match_attempts_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374083039509" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/spec/models/messages_spec.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1369327114385" ignored="false" />
     <file path="/messages_spec.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1369327076512" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/log/test.log" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1367124296789" ignored="false" />
@@ -48,14 +66,14 @@
     <file path="/factories.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373552268253" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/spec/controllers/messages_controller_spec.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1367324125791" ignored="false" />
     <file path="/messages_controller_spec.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1367270117418" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/app/controllers/messages_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371218822651" ignored="false" />
-    <file path="/messages_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371132673723" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/controllers/messages_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374189862534" ignored="false" />
+    <file path="/messages_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374189860256" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/views/messages/_message_box.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371526823084" ignored="false" />
     <file path="/_message_box.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371498926042" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/spec/controllers/match_participants_controller_spec.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371505709199" ignored="false" />
     <file path="/match_participants_controller_spec.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1369536998249" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/app/controllers/match_participants_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371505653280" ignored="false" />
-    <file path="/match_participants_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371502069144" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/controllers/match_participants_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374188040952" ignored="false" />
+    <file path="/match_participants_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374188040952" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/views/lovebirds/_match_status_message.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371005091138" ignored="false" />
     <file path="/_match_status_message.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371004881214" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/config/environments/test.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1367426419111" ignored="false" />
@@ -65,7 +83,7 @@
     <file path="$PROJECT_DIR$/../lovecrossing/app/controllers/application_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373349264031" ignored="false" />
     <file path="/lovebirds_controller_spec.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1369327756925" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/spec/controllers/match_attempts_controller_spec.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374005643957" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/app/controllers/lovebirds_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373616439970" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/controllers/lovebirds_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374096519416" ignored="false" />
     <file path="/match_attempts_controller_spec.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373995140935" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/spec/controllers/users_controller_spec.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1369087963504" ignored="false" />
     <file path="/users_controller_spec.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1369087962803" ignored="false" />
@@ -73,19 +91,19 @@
     <file path="/users_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1369087255651" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/spec/models/matchmaker_request_spec.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1369327094866" ignored="false" />
     <file path="/matchmaker_request_spec.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1369327094417" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/spec/models/match_attempt_spec.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373613917143" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/spec/models/match_attempt_spec.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374096688070" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/spec/models/match_participant_spec.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1369464071165" ignored="false" />
     <file path="/match_participant_spec.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1369327104003" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/app/models/user.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374005586133" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/models/user.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374080362654" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/models/match_attempt.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374004491703" ignored="false" />
     <file path="/match_attempt.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373999169467" ignored="false" />
-    <file path="/lovebirds_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373616438017" ignored="false" />
+    <file path="/lovebirds_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374096518312" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/views/lovebirds/_lovebird_matches.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371504863467" ignored="false" />
     <file path="/user_spec.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373555988035" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/spec/models/user_spec.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373555988035" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/Gemfile.lock" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373327361710" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/vendor/plugins/jquery.jeditable.js" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1369494939299" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/app/views/match_attempts/new.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373590144841" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/views/match_attempts/new.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374686300751" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/assets/stylesheets/full_site/lovecrossing.css.scss" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1369786856830" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/spec/controllers/application_controller_spec.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1369787533102" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/assets/stylesheets/bootstrap_sass/color_schemes/_original.css.scss" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1370109486928" ignored="false" />
@@ -95,19 +113,19 @@
     <file path="$PROJECT_DIR$/../lovecrossing/app/assets/stylesheets/bootstrap_sass/color_schemes/_lovecrossing.css.scss" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373590177396" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/views/layouts/_default_intro.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373564369202" ignored="false" />
     <file path="/_default_intro.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373564313317" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/app/assets/stylesheets/desktop/lovecrossing.css.scss" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373617101724" ignored="false" />
-    <file path="/lovecrossing.css.scss" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373617091572" ignored="false" />
-    <file path="/new.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373590077535" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/assets/stylesheets/desktop/lovecrossing.css.scss" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374529806013" ignored="false" />
+    <file path="/lovecrossing.css.scss" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374529789786" ignored="false" />
+    <file path="/new.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374615285470" ignored="false" />
     <file path="/_lovecrossing.css.scss" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373486841323" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/app/views/layouts/_top_menu.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373590845947" ignored="false" />
-    <file path="/_top_menu.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373590842131" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/app/views/layouts/_bottom_menu.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371070980586" ignored="false" />
-    <file path="/_bottom_menu.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371070980054" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/views/layouts/_top_menu.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374525490413" ignored="false" />
+    <file path="/_top_menu.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374525334193" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/views/layouts/_bottom_menu.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374529644713" ignored="false" />
+    <file path="/_bottom_menu.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374529623207" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/views/layouts/_two_column.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371486384299" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/app/views/match_attempts/_select_friends.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374002918556" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/views/match_attempts/_select_friends.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374263170150" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/views/users/_user_pic.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371150938861" ignored="false" />
     <file path="/_user_pic.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1370971604072" ignored="false" />
-    <file path="/_select_friends.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374002533138" ignored="false" />
+    <file path="/_select_friends.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374262994678" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/assets/javascripts/application.js" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373611805014" ignored="false" />
     <file path="/application.js" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373580598812" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/views/users/_mobile_user_pic.mobile.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371072018591" ignored="false" />
@@ -116,42 +134,42 @@
     <file path="$PROJECT_DIR$/../lovecrossing/app/views/match_attempts/new.mobile.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1370725004490" ignored="false" />
     <file path="/globals.css.sass" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1370882734890" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/assets/stylesheets/bootstrap/lovecrossing-supplement.css.scss" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371486314029" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/app/views/match_attempts/_new_match_confirmation.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371144687252" ignored="false" />
-    <file path="/_new_match_confirmation.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371070262069" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/views/match_attempts/_new_match_confirmation.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374722659926" ignored="false" />
+    <file path="/_new_match_confirmation.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374722562525" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/views/match_attempts/_recent_matches.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1370891651156" ignored="false" />
     <file path="/_recent_matches.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1370891649637" ignored="false" />
     <file path="/match_attempt_spec.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373552523235" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/app/views/lovebirds/_match_overview.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1370983850017" ignored="false" />
-    <file path="/_match_overview.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1370983798500" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/app/views/lovebirds/show.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371526235971" ignored="false" />
-    <file path="/show.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374030879424" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/views/lovebirds/_match_overview.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374597906274" ignored="false" />
+    <file path="/_match_overview.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374597891112" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/views/lovebirds/show.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374600078949" ignored="false" />
+    <file path="/show.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374600078510" ignored="false" />
     <file path="/_lovebird_matches.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371153602860" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/app/views/lovebirds/index.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371502616090" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/views/lovebirds/index.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374267419777" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/controllers/sessions_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373302458898" ignored="false" />
     <file path="/_two_column.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371480592579" ignored="false" />
-    <file path="/application.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373171097642" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/app/views/layouts/application.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371480551741" ignored="false" />
+    <file path="/application.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374734690468" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/views/layouts/application.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374613743538" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/views/lovebirds/_user_messaging_box.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371031602447" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/app/views/dialog/lovebirds/_match_open.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371050327127" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/views/dialog/lovebirds/_match_open.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374096553891" ignored="false" />
     <file path="/_match_open.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371050280076" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/app/views/dialog/lovebirds/_acceptance_wait.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371505030976" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/views/dialog/lovebirds/_acceptance_wait.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374096550181" ignored="false" />
     <file path="/_acceptance_wait.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371504354942" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/app/views/user_mailer/notify_match_accept_lovebird.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371050534231" ignored="false" />
-    <file path="/notify_match_accept_lovebird.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371050504287" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/app/mailers/user_mailer.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371050557578" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/views/user_mailer/notify_match_accept_lovebird.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374534608355" ignored="false" />
+    <file path="/notify_match_accept_lovebird.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374534491637" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/mailers/user_mailer.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374189774661" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/views/user_mailer/create.js.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371054171130" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/views/lovebirds/create.js.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371054326985" ignored="false" />
     <file path="/create.js.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371054325464" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/views/lovebirds/_side_menu.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371144823900" ignored="false" />
     <file path="/_mobile_user_pic.mobile.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371071971184" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/app/assets/javascripts/lovebirds.js" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371501880931" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/assets/javascripts/lovebirds.js" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374520373220" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/assets/stylesheets/logged-in.css.scss" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371129997937" ignored="false" />
     <file path="/logged-in.css.scss" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371129996114" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/assets/stylesheets/logged-out.css.scss" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371130105547" ignored="false" />
     <file path="/logged-out.css.scss" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371130105547" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/assets/stylesheets/bootstrap_importer.css.scss" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373588333487" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/assets/javascripts/lovecrossing_ui.js" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373303648379" ignored="false" />
-    <file path="/lovebirds.js" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371499593814" ignored="false" />
+    <file path="/lovebirds.js" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374520368253" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/views/lovebirds/_matchmaker_request.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371145027738" ignored="false" />
     <file path="/_matchmaker_request.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371144186044" ignored="false" />
     <file path="/match_attempts.js" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374002319605" ignored="false" />
@@ -169,20 +187,20 @@
     <file path="$PROJECT_DIR$/../lovecrossing/app/views/layouts/_tour_layout.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371481576705" ignored="false" />
     <file path="/lovecrossing-supplement.css.scss" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371483580054" ignored="false" />
     <file path="/facebook_data.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373320440393" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/db/schema.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373554207545" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/db/schema.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374602304213" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/assets/javascripts/jquery-turbolinks" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371500249474" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/views/lovebirds/tour.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1371581905303" ignored="false" />
     <file path="/thoughts.txt" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1372881382586" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/spec/web_functional/create_match.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374005662279" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/spec/web_functional/create_match.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374604205108" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/views/shared/_error_messages.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373297991615" ignored="false" />
     <file path="/_new_main_section.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374003527000" ignored="false" />
     <file path="$PROJECT_DIR$/../sacrament_meeting_program/Gemfile" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373168075875" ignored="false" />
-    <file path="$PROJECT_DIR$/../sacrament_meeting_program/app/views/programs/show.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374030887612" ignored="false" />
+    <file path="$PROJECT_DIR$/../sacrament_meeting_program/app/views/programs/show.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374377513912" ignored="false" />
     <file path="$PROJECT_DIR$/../sacrament_meeting_program/app/views/layouts/application.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373171387762" ignored="false" />
-    <file path="$PROJECT_DIR$/../sacrament_meeting_program/db/schema.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373698194030" ignored="false" />
+    <file path="$PROJECT_DIR$/../sacrament_meeting_program/db/schema.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374366656304" ignored="false" />
     <file path="$PROJECT_DIR$/../sacrament_meeting_program/config/routes.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373225192498" ignored="false" />
-    <file path="$PROJECT_DIR$/../sacrament_meeting_program/app/controllers/programs_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373225735855" ignored="false" />
-    <file path="/programs_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373225735855" ignored="false" />
+    <file path="$PROJECT_DIR$/../sacrament_meeting_program/app/controllers/programs_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374378831882" ignored="false" />
+    <file path="/programs_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374377399098" ignored="false" />
     <file path="$PROJECT_DIR$/../sacrament_meeting_program/app/views/people/index.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373165105773" ignored="false" />
     <file path="$PROJECT_DIR$/../sacrament_meeting_program/app/views/people/new.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373165134617" ignored="false" />
     <file path="$PROJECT_DIR$/../sacrament_meeting_program/app/assets/stylesheets/application.css" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373165817943" ignored="false" />
@@ -199,11 +217,11 @@
     <file path="$PROJECT_DIR$/../sacrament_meeting_program/app/views/items/new.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373225416609" ignored="false" />
     <file path="$PROJECT_DIR$/../sacrament_meeting_program/app/views/items/index.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373225432401" ignored="false" />
     <file path="$PROJECT_DIR$/../sacrament_meeting_program/app/views/items/edit.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373225452687" ignored="false" />
-    <file path="/edit.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373252373553" ignored="false" />
+    <file path="/edit.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374465203152" ignored="false" />
     <file path="$PROJECT_DIR$/../sacrament_meeting_program/app/assets/stylesheets/programs.css.scss" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373868600489" ignored="false" />
     <file path="/programs.css.scss" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373868600036" ignored="false" />
-    <file path="$PROJECT_DIR$/../sacrament_meeting_program/app/assets/javascripts/programs.js" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373254544553" ignored="false" />
-    <file path="/programs.js" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373228173105" ignored="false" />
+    <file path="$PROJECT_DIR$/../sacrament_meeting_program/app/assets/javascripts/programs.js" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374464987463" ignored="false" />
+    <file path="/programs.js" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374464948976" ignored="false" />
     <file path="$PROJECT_DIR$/../sacrament_meeting_program/app/models/person.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373252315402" ignored="false" />
     <file path="/person.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373252300613" ignored="false" />
     <file path="$PROJECT_DIR$/../sacrament_meeting_program/log/development.log" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373905925671" ignored="false" />
@@ -212,9 +230,9 @@
     <file path="$PROJECT_DIR$/../sacrament_meeting_program/db/seeds.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373844436398" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/assets/javascripts/desktop/desktop.js" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374023561881" ignored="false" />
     <file path="$PROJECT_DIR$/../sacrament_meeting_program/app/assets/stylesheets/chosen.css" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373267404988" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/app/controllers/static_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373612198543" ignored="false" />
-    <file path="/static_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373291462066" ignored="false" />
-    <file path="$PROJECT_DIR$/../lovecrossing/app/views/static/default_intro.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373575798531" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/controllers/static_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374688172228" ignored="false" />
+    <file path="/static_controller.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374688170818" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/views/static/default_intro.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374627726230" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/views/sessions/signout_facebook.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373294948103" ignored="false" />
     <file path="/signout_facebook.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373294906767" ignored="false" />
     <file path="/lovecrossing_ui.js" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373295301103" ignored="false" />
@@ -258,7 +276,7 @@
     <file path="/_working.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373515770001" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/views/dialog/_working.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373515770859" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/views/dialog/_choose_friends_modal.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373587358093" ignored="false" />
-    <file path="/default_intro.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373575791736" ignored="false" />
+    <file path="/default_intro.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374627673974" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/assets/stylesheets/common/lovecrossing-common.css.scss" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373574978948" ignored="false" />
     <file path="$PROJECT_DIR$/../lovecrossing/app/views/dialog/_match_attempts_new_tour.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373598512788" ignored="false" />
     <file path="/_match_attempts_new_tour.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373598512374" ignored="false" />
@@ -273,7 +291,7 @@
     <file path="/_one_line_item.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373848654249" ignored="false" />
     <file path="$PROJECT_DIR$/../sacrament_meeting_program/app/views/items/_hymns.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373775999353" ignored="false" />
     <file path="/_hymns.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373847768506" ignored="false" />
-    <file path="$PROJECT_DIR$/../sacrament_meeting_program/app/views/items/_one_line_item_with_person.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373868334745" ignored="false" />
+    <file path="$PROJECT_DIR$/../sacrament_meeting_program/app/views/items/_one_line_item_with_person.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374378009286" ignored="false" />
     <file path="$PROJECT_DIR$/../sacrament_meeting_program/app/views/items/_hymn.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373868271603" ignored="false" />
     <file path="/_hymn.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373867213705" ignored="false" />
     <file path="$PROJECT_DIR$/../sacrament_meeting_program/app/views/items/_one_line_item.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1373868358711" ignored="false" />
@@ -283,6 +301,32 @@
     <file path="/_alert.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374003114009" ignored="false" />
     <file path="$PROJECT_DIR$/../sacrament_meeting_program/app/views/programs/_pictures.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374030844486" ignored="false" />
     <file path="/_pictures.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374030131268" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/views/user_mailer/notify_new_match.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374534566380" ignored="false" />
+    <file path="/notify_new_match.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374095230342" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/views/dialog/_get_contact_emails.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374083390956" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/views/dialog/_get_matchmaker_email.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374083396388" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/views/layouts/_confirm_email.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374083383204" ignored="false" />
+    <file path="/_get_contact_emails.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374083390956" ignored="false" />
+    <file path="/_get_matchmaker_email.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374083396388" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/views/static/privacy_policy.mobile.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374084081787" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/views/static/privacy_policy.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374083910352" ignored="false" />
+    <file path="/privacy_policy.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374083910352" ignored="false" />
+    <file path="/user_mailer.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374189769194" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/views/user_mailer/notify_match_accept_matchmaker.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374534623840" ignored="false" />
+    <file path="/notify_match_accept_matchmaker.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374180757731" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/views/user_mailer/notify_new_message.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374534668652" ignored="false" />
+    <file path="/notify_new_message.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374189989048" ignored="false" />
+    <file path="$PROJECT_DIR$/../sacrament_meeting_program/app/views/programs/edit.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374596129834" ignored="false" />
+    <file path="$PROJECT_DIR$/../sacrament_meeting_program/app/views/programs/template.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374378029629" ignored="false" />
+    <file path="/template.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374377459184" ignored="false" />
+    <file path="$PROJECT_DIR$/../sacrament_meeting_program/app/models/program.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374374546331" ignored="false" />
+    <file path="/program.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374374545163" ignored="false" />
+    <file path="/_one_line_item_with_person.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374377964278" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/app/views/static/terms_of_use.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374529410644" ignored="false" />
+    <file path="/terms_of_use.html.erb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374529409778" ignored="false" />
+    <file path="$PROJECT_DIR$/../lovecrossing/spec/web_functional/get_match.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374606928137" ignored="false" />
+    <file path="/get_match.rb" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374606911467" ignored="false" />
+    <file path="/application.css" changelist="e9b9060d-07b4-437e-ba0f-30817e8b9108" time="1374734644725" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,46 +343,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/activities/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="20" selection-start="295" selection-end="295" vertical-scroll-proportion="-0.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="thoughts.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thoughts.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="36" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/application.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="14" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="147" selection-end="147" vertical-scroll-proportion="0.29284164">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rails" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/rails">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="14" column="21" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -347,7 +355,34 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/calendars/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="7" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0">
+            <state line="4" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="-2.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="0" selection-start="300" selection-end="300" vertical-scroll-proportion="-8.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="4" selection-start="1463" selection-end="1463" vertical-scroll-proportion="0.63137996">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="google_data.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/google_data.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="6" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -356,25 +391,25 @@
       <file leaf-file-name="calendars_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/calendars_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
+            <state line="11" column="4" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activities_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/activities_controller.rb">
+      <file leaf-file-name="seeds.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="73" column="0" selection-start="7722" selection-end="7722" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_test.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/unit/activity_test.rb">
+      <file leaf-file-name="activity.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/activity.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
+            <state line="18" column="52" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -387,25 +422,33 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/initializers/omniauth.rb" />
-        <option value="$PROJECT_DIR$/app/views/calendars/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/sessions/create.html.erb" />
-        <option value="$PROJECT_DIR$/lib/google_data.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
-        <option value="$PROJECT_DIR$/db/schema.rb" />
-        <option value="$PROJECT_DIR$/app/models/event.rb" />
-        <option value="$PROJECT_DIR$/app/models/task.rb" />
-        <option value="$PROJECT_DIR$/app/models/activity.rb" />
-        <option value="$PROJECT_DIR$/app/models/category.rb" />
         <option value="$PROJECT_DIR$/app/models/location.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/thoughts.txt" />
         <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/lib/google_data.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/activity.rb" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/calendars/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/calendars_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
       </list>
     </option>
   </component>
@@ -413,9 +456,9 @@
     <option name="x" value="27" />
     <option name="y" value="22" />
     <option name="width" value="1383" />
-    <option name="height" value="607" />
+    <option name="height" value="688" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -469,84 +512,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="functional" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -561,141 +526,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="initializers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sessions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -745,10 +576,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="/" />
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
@@ -864,14 +699,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="27" y="22" width="1383" height="607" extended-state="0" />
-    <editor active="false" />
+    <frame x="27" y="22" width="1383" height="688" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26776364" sideWeight="0.672549" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27673897" sideWeight="0.68296796" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -880,7 +715,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36772045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31703204" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -942,113 +777,110 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/categories_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.9/lib/active_record/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="8" selection-start="918" selection-end="918" vertical-scroll-proportion="0.33333334" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/goal.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/activity.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sessions/create.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/activities/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1366487886000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1366487886000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1366487886000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1366487886000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1366487886000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1366487886000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/activities/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="20" selection-start="295" selection-end="295" vertical-scroll-proportion="-0.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/calendars/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="7" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/calendars_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/activities_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.5/lib/rack/request.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="4" selection-start="542" selection-end="542" vertical-scroll-proportion="0.33188722">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/activity_test.rb">
+    <entry file="file://$PROJECT_DIR$/config/initializers/omniauth.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
+        <state line="1" column="12" selection-start="73" selection-end="86" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thoughts.txt">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="36" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
+        <state line="14" column="0" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="14" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0">
+        <state line="11" column="0" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p125/gems/rr-1.1.0/lib/rr/integrations/rspec_2.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/activity.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="37" selection-start="72" selection-end="72" vertical-scroll-proportion="0.09803922">
+        <state line="18" column="52" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/rails">
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="73" column="0" selection-start="7722" selection-end="7722" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/google_data.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="6" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="147" selection-end="147" vertical-scroll-proportion="0.29284164">
+        <state line="14" column="21" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="74" selection-start="490" selection-end="495" vertical-scroll-proportion="0.22140221">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="12" selection-start="653" selection-end="653" vertical-scroll-proportion="0.41512915">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="300" selection-end="300" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/calendars/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="-2.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/calendars_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="4" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="4" selection-start="1463" selection-end="1463" vertical-scroll-proportion="0.63137996">
           <folding />
         </state>
       </provider>

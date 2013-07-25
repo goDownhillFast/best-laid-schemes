@@ -6,11 +6,10 @@ class GoogleData
     @calendar = @client.discovered_api('calendar', 'v3')
   end
 
-  def list_events(calendar_id='primary', opts={})
-    @client.execute(:api_method => @calendar.events.list,
-                    :parameters => {calendarId: calendar_id,
-                    timeMin: opts[:start_time],
-                    timeMax: opts[:end_time]})
+  def list_events(opts={})
+    opts[:calendarId] ||= 'primary'
+    @client.execute(api_method: @calendar.events.list,
+                    parameters: opts)
   end
 
   def calendar_list

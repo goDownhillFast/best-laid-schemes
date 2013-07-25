@@ -1,2 +1,15 @@
 <p id="notice"><%= notice %></p>
-<%= @result %>
+
+
+<% @result.each do |key, value| %>
+  <div class="row">
+    <div class="row-8 columns">
+      <div class="large-4 columns">
+        <%= key %>
+      </div>
+      <div class="large-1 columns">
+        <%= value %>
+      </div>
+    </div>
+  </div>
+<% end %>

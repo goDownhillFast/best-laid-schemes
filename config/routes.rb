@@ -1,33 +1,16 @@
 Planner::Application.routes.draw do
 
-  resources :users
-
-
-  resources :locations
-
-
-  resources :events
-
-
-  resources :windows
-
-
   root :to => 'calendars#index'
 
+  resources :users
+  resources :locations
+  resources :events
+  resources :windows
   resources :goals
-
-
   resources :activities
-
-
   resources :tasks
-
-
   resources :weekly_plans
-
-
   resources :categories
-
   resources :calendars
 
   resources :sessions do
@@ -36,8 +19,9 @@ Planner::Application.routes.draw do
     end
   end
 
-  match "/auth/:provider/callback" => "sessions#create"
+  #provider for google is google_oauth2
 
+  match "/auth/:provider/callback" => "sessions#create"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

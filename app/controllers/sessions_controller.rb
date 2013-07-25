@@ -10,9 +10,7 @@ class SessionsController < ApplicationController
 
     google_data.calendar_list.data.items.each { |calendar| session[:calendars][calendar.summary] = calendar.id }
 
-    @result = google_data.list_events(session[:calendars]['Plan'], {start_time: Time.new.strftime("%FT%T%:z"),
-                                                                     end_time: (Time.new + 5.hours).strftime("%FT%T%:z")}).data
-
+    redirect_to root_url
 
     #respond_to do |format|
     #  format.html { redirect_to root_url, :notice => "Signed in!" }
