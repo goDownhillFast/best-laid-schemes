@@ -60,6 +60,8 @@ GEM
     faraday (0.8.7)
       multipart-post (~> 1.1)
     ffi (1.8.1)
+    font-awesome-rails (3.2.1.2)
+      railties (>= 3.2, < 5.0)
     google-api-client (0.6.3)
       addressable (>= 2.3.2)
       autoparse (>= 0.3.3)
@@ -191,6 +193,8 @@ GEM
       selenium-webdriver (>= 2.18.0)
     webrobots (0.1.1)
     websocket (1.0.7)
+    zurb-foundation (4.0.9)
+      sass (>= 3.2.0)
 
 PLATFORMS
   ruby
@@ -199,6 +203,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   factory_girl
   factory_girl_rails (~> 4.0)
+  font-awesome-rails
   google-api-client
   jquery-rails
   mechanize
@@ -211,3 +216,4 @@ DEPENDENCIES
   turn
   uglifier (>= 1.0.3)
   watir
+  zurb-foundation (~> 4.0.0)
