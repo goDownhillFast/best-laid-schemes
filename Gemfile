@@ -10,7 +10,7 @@ gem 'google-api-client', :require => 'google/api_client'
 
 gem 'jquery-rails'
 
-gem 'sqlite3'
+gem 'pg'
 
 gem 'zurb-foundation', '~> 4.0.0'
 
