@@ -30,6 +30,8 @@ group :development, :test do
   #gem 'rspec-rails', "~> 2.11"
   gem 'rr'
   gem "mechanize"
+  gem 'thin'
+  gem 'unicorn'
 end
 
 group :test do
@@ -47,7 +49,6 @@ end
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'

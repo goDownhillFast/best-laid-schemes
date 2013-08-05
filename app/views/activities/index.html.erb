@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>Cal ID</th>
     <th>Name</th>
     <th>Repeating</th>
     <th>Category</th>
@@ -11,8 +12,9 @@
   </tr>
 
 <% @activities.each do |activity| %>
-  <tr>
-    <td><%= activity.name %></td>
+    <tr>
+      <td><%= activity.old_id %></td>
+      <td><%= activity.name %></td>
     <td><%= activity.repeating %></td>
     <td><%= activity.category_id %></td>
     <td><%= link_to 'Show', activity %></td>

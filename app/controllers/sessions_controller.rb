@@ -5,10 +5,10 @@ class SessionsController < ApplicationController
   def create
     auth = request.env['omniauth.auth']
     session[:auth_token] = auth[:credentials][:token]
-
+    session[:expires_at] = auth[:credentials][:expires_at].to_i
     session[:calendars] = {}
 
-    google_data.calendar_list.data.items.each { |calendar| session[:calendars][calendar.summary] = calendar.id }
+    #google_data.calendar_list.data.items.each { |calendar| session[:calendars][calendar.summary] = calendar.id }
 
     redirect_to root_url
 
