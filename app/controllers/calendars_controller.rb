@@ -33,9 +33,11 @@ class CalendarsController < ApplicationController
     two_weeks_ago = get_category_totals({timeMin: right_now - 2.weeks,
                                         timeMax: right_now - 1.week})
 
+    three_weeks_ago = get_category_totals({timeMin: right_now - 3.weeks,
+                                         timeMax: right_now - 2.weeks})
     @categories = Category.includes(:activities).all
 
-    @time_periods = [future,one_week_ago,two_weeks_ago]
+    @time_periods = [future,one_week_ago,two_weeks_ago,three_weeks_ago]
 
   end
 

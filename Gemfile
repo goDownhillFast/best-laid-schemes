@@ -14,10 +14,12 @@ gem 'pg'
 
 gem 'zurb-foundation', '~> 4.0.0'
 
+gem "bcrypt-ruby"
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
+  gem 'sass-rails', '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'font-awesome-rails'
 
@@ -30,7 +32,6 @@ group :development, :test do
   #gem 'rspec-rails', "~> 2.11"
   gem 'rr'
   gem "mechanize"
-  gem 'thin'
   gem 'unicorn'
 end
 
@@ -40,6 +41,10 @@ group :test do
   gem 'turn', :require => false
   gem 'factory_girl'
   gem "factory_girl_rails", "~> 4.0"
+end
+
+group :production do
+  gem 'thin'
 end
 
 # To use ActiveModel has_secure_password

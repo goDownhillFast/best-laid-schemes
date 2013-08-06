@@ -16,11 +16,12 @@ class ApplicationController < ActionController::Base
   end
 
   def current_user
-    if session[:expires_at] && DateTime.new < Time.at(session[:expires_at]).to_datetime && session[:auth_token]
-      @current_user
-    else
-      @current_user = User.find_or_create_with_google_data(session[:auth_token])
-    end
+    #if session[:expires_at] && DateTime.new < Time.at(session[:expires_at]).to_datetime && session[:auth_token]
+    #  @current_user = User.find_or_create_by_email(session[:email])
+    #else
+    #  @current_user = User.find_or_create_by_email(session[:email])
+    #end
+    @current_user ||= User.find_or_create_by_email(session[:email])
   end
 
   def get_category_totals(opts={})
@@ -78,7 +79,7 @@ class ApplicationController < ActionController::Base
 
   def get_all_categories
     all_categories = {}
-    Category.all.each do |category|
+    current_user.categories.all.each do |category|
       all_categories[category.id] ||= {total: 0, average: 0}
       all_categories[category.id][:name] = category.name
       all_categories[category.id][:activities] ||= {}
@@ -97,7 +98,7 @@ class ApplicationController < ActionController::Base
 
   def get_all_activities
     all_activities = {}
-    Activity.all.each do |activity|
+    current_user.activities.all.each do |activity|
       all_activities[activity.old_id] ||= {}
       all_activities[activity.old_id][:name] = activity.name
       all_activities[activity.old_id][:category] ||= {}
