@@ -5,5 +5,5 @@ class Category < ActiveRecord::Base
   has_many :tasks
   has_many :activities
 
-  attr_accessible :name
+  attr_accessible :name, :budget
 end

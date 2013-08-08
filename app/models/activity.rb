@@ -16,5 +16,5 @@ class Activity < ActiveRecord::Base
     plan.number_of_hours if plan.present?
   end
 
-  attr_accessible :category_id, :name, :repeating, :old_id
+  attr_accessible :category_id, :name, :repeating, :old_id, :budget
 end
