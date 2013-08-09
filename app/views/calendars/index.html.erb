@@ -1,43 +1,56 @@
 <p id="notice"><%= notice %></p>
 
+
+
 <% @categories.each do |category| %>
 
   <div class="row category">
-    <div class="row">
-      <div class="row-8 columns">
-        <%= category.name %>
-      </div>
-    </div>
-
     <% category.activities.each do |activity| %>
-      <% next unless @time_periods.inject(0) {|sum, hash| sum + hash[category.id][:activities][activity.old_id][:total] } > 0 %>
-      <div class="row">
-        <div class="row-8 columns">
+      <% next unless @one_week_ago[category.id][:activities][activity.old_id][:total] > 0 || (activity.budget && activity.budget > 0) %>
+      <%# next unless @one_week_ago.inject(0) {|sum, hash| sum + hash[category.id][:activities][activity.old_id][:total] } > 0 %>
+      <div class="row activity-row" style="border-bottom:solid;border-bottom-color: gainsboro; border-bottom-width: 1px">
+        <div class="row-12 columns activity-summary" data-activity-id='<%= activity.id %>'>
           <div class="large-4 columns">
-            <%= activity.name %>
+            <%= link_to(edit_activity_path(activity )) do %><%= activity.name %><% end %>
           </div>
-          <% @time_periods.each do |time_period| %>
-            <div class="large-1 columns end">
-              <%= time_period[category.id][:activities][activity.old_id][:total] || "-" %>
-            </div>
-          <% end %>
+          <div class="large-1 columns">
+            <%= @today_compare[category.id][:activities][activity.old_id][:total] || "-" %>
+          </div>
+          <div class="large-1 columns">
+            <%= @last_week_compare[category.id][:activities][activity.old_id][:total] || "-" %>
+          </div>
+          <div class="large-4 columns end activity-time-total">
+            <div class="flot-placeholder" data-time-total="<%= @one_week_ago[category.id][:activities][activity.old_id][:total] || '--' %>" data-time-budget="<%= activity.budget || '--' %>" style="height:30px; width: 100%;"></div>
+          </div>
+          <div class="large-2 columns">
+            <%= @one_week_ago[category.id][:activities][activity.old_id][:total] || "0" %> / <%= activity.budget %>
+          </div>
 
         </div>
       </div>
 
     <% end %>
-
     <div class="row">
-      <div class="row-8 columns category-total">
+      <div class="row-12 columns category-total">
         <div class="large-4 columns">
-          Total
+          <%= link_to(edit_category_path(category)) do %>Total <%= category.name %>
+          <% end %>
         </div>
-        <% @time_periods.each do |time_period| %>
-          <div class="large-1 columns end">
-            <%= time_period[category.id][:total] %>
-          </div>
-        <% end %>
+        <div class="large-1 columns">
+          <%= @today_compare[category.id][:total] || "-" %>
+        </div>
+        <div class="large-1 columns">
+          <%= @last_week_compare[category.id][:total] || "-" %>
+        </div>
+        <div class="large-4 columns end activity-time-total">
+          <div class="flot-placeholder" data-time-total="<%= @one_week_ago[category.id][:total] || '--' %>" data-time-budget="<%= category.budget || '--' %>" style="height:30px; width: 100%;"></div>
+        </div>
+        <div class="large-2 columns end">
+          <%= @one_week_ago[category.id] ? @one_week_ago[category.id][:total] : 0 %> / <%= category.budget %>
+        </div>
       </div>
+
+
     </div>
   </div>
 <% end %>
