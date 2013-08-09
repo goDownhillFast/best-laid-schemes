@@ -19,17 +19,27 @@
 $(function () {
   $('.flot-placeholder').each(function (index) {
     var thisGraph = $(this);
-    var total_time = {color: 'yellow', data: [[parseFloat(thisGraph.attr('data-time-total')), 0]]};
+    var thisRow = $(this).closest('.summary');
+    var total_time_amount = parseFloat(thisGraph.attr('data-time-total')); // add this when page is fixed + parseFloat(thisRow.find('.todays-plan').attr('data-time')) - parseFloat(thisRow.find('.seven-days-ago').attr('data-time'));
+    var budget_time_amount = parseFloat(thisGraph.attr('data-time-budget'));
+    if(total_time_amount > budget_time_amount){
+       var allotted_time_amount = budget_time_amount
+    }else {
+      var allotted_time_amount = total_time_amount
+    }
+
+    var allotted_time_graph = {color: '#10C579', data: [[allotted_time_amount, 0]]};
+
+
+    var total_time_graph = {color: '#FFE054', data: [[total_time_amount, 0]]};
     if (thisGraph.attr('data-time-budget')) {
-      var budget_time = {
-        color: 'blue', data: [[thisGraph.attr('data-time-budget'), 0]]
+      var budget_time_graph = {
+        color: '#FFFFFF', data: [[budget_time_amount, 0]]
       }
     } else {
-      var budget_time = {color: 'blue', data: [[thisGraph.attr('data-time-budget'), 0]]}
+      var budget_time_graph = {color: '#FFFFFF', data: [[budget_time_amount, 0]]}
     }
-    thisGraph.plot([total_time,
-      budget_time
-    ], defaultGraphOptions).data('plot');
+    thisGraph.plot([budget_time_graph, total_time_graph, allotted_time_graph], defaultGraphOptions).data('plot');
   });
 });
 
@@ -43,7 +53,7 @@ var defaultGraphOptions = {
     align: "center",
     barWidth: 0.5,
     horizontal: true,
-//    fillColor: { colors: [{ opacity: 0.5 }, { opacity: 1}] },
+    fillColor: { colors: [{ brightness: 0.8 }, { brightness: 1}] },
     lineWidth: 1
   },
   yaxis: {

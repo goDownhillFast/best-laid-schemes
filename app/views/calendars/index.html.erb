@@ -6,7 +6,7 @@
 
   <div class="row category">
     <% category.activities.each do |activity| %>
-      <% next unless @one_week_ago[category.id][:activities][activity.old_id][:total] > 0 || (activity.budget && activity.budget > 0) %>
+      <% next unless activity.budget && activity.budget > 0 %>
       <%# next unless @one_week_ago.inject(0) {|sum, hash| sum + hash[category.id][:activities][activity.old_id][:total] } > 0 %>
       <div class="row activity-row" style="border-bottom:solid;border-bottom-color: gainsboro; border-bottom-width: 1px">
         <div class="row-12 columns activity-summary" data-activity-id='<%= activity.id %>'>
@@ -20,10 +20,10 @@
             <%= @last_week_compare[category.id][:activities][activity.old_id][:total] || "-" %>
           </div>
           <div class="large-4 columns end activity-time-total">
-            <div class="flot-placeholder" data-time-total="<%= @one_week_ago[category.id][:activities][activity.old_id][:total] || '--' %>" data-time-budget="<%= activity.budget || '--' %>" style="height:30px; width: 100%;"></div>
+            <div class="flot-placeholder" data-time-total="<%= @one_week_ago[category.id][:activities][activity.old_id][:total] + @today_compare[category.id][:activities][activity.old_id][:total] - @last_week_compare[category.id][:activities][activity.old_id][:total] %>" data-time-budget="<%= activity.budget || '--' %>" style="height:30px; width: 100%;"></div>
           </div>
           <div class="large-2 columns">
-            <%= @one_week_ago[category.id][:activities][activity.old_id][:total] || "0" %> / <%= activity.budget %>
+            <%= @one_week_ago[category.id][:activities][activity.old_id][:total] + @today_compare[category.id][:activities][activity.old_id][:total] - @last_week_compare[category.id][:activities][activity.old_id][:total] %> / <%= activity.budget %>
           </div>
 
         </div>
@@ -43,10 +43,10 @@
           <%= @last_week_compare[category.id][:total] || "-" %>
         </div>
         <div class="large-4 columns end activity-time-total">
-          <div class="flot-placeholder" data-time-total="<%= @one_week_ago[category.id][:total] || '--' %>" data-time-budget="<%= category.budget || '--' %>" style="height:30px; width: 100%;"></div>
+          <div class="flot-placeholder" data-time-total="<%= @one_week_ago[category.id][:total] + @today_compare[category.id][:total] - @last_week_compare[category.id][:total] %>" data-time-budget="<%= category.budget || '--' %>" style="height:30px; width: 100%;"></div>
         </div>
         <div class="large-2 columns end">
-          <%= @one_week_ago[category.id] ? @one_week_ago[category.id][:total] : 0 %> / <%= category.budget %>
+          <%= @one_week_ago[category.id][:total] + @today_compare[category.id][:total] - @last_week_compare[category.id][:total] %> / <%= category.budget %>
         </div>
       </div>
 
