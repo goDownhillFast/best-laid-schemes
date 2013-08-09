@@ -23,26 +23,28 @@ class CalendarsController < ApplicationController
     #@custom_so_far = get_category_totals({timeMin: custom_start_month,
     #                                      timeMax: right_now})
 
-    today_compare = get_category_totals({timeMin: right_now.at_beginning_of_day,
+    @today_compare = get_category_totals({timeMin: right_now.at_beginning_of_day,
                                              timeMax: right_now.at_beginning_of_day + 1.day})
 
-    last_week_compare = get_category_totals({timeMin: right_now.at_beginning_of_day - 7.days,
+    @last_week_compare = get_category_totals({timeMin: right_now.at_beginning_of_day - 7.days,
                                              timeMax: right_now.at_beginning_of_day - 6.days})
 
-    future = get_category_totals({timeMin: right_now,
-                                      timeMax: right_now + 1.week})
+    #future = get_category_totals({timeMin: right_now,
+    #                                  timeMax: right_now + 1.week})
 
-    one_week_ago = get_category_totals({timeMin: right_now - 1.week,
+    @one_week_ago = get_category_totals({timeMin: right_now - 1.week,
                                           timeMax: right_now})
 
-    two_weeks_ago = get_category_totals({timeMin: right_now - 2.weeks,
-                                        timeMax: right_now - 1.week})
-
-    three_weeks_ago = get_category_totals({timeMin: right_now - 3.weeks,
-                                         timeMax: right_now - 2.weeks})
+    #two_weeks_ago = get_category_totals({timeMin: right_now - 2.weeks,
+    #                                    timeMax: right_now - 1.week})
+    #
+    #three_weeks_ago = get_category_totals({timeMin: right_now - 3.weeks,
+    #                                     timeMax: right_now - 2.weeks})
     @categories = Category.includes(:activities).all
 
-    @time_periods = [today_compare,last_week_compare,future,one_week_ago,two_weeks_ago,three_weeks_ago]
+    #@weekly_time_periods = [one_week_ago,two_weeks_ago,three_weeks_ago]
+
+    #@daily_time_periods = [today_compare,last_week_compare,future]
 
   end
 
