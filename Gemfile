@@ -3,13 +3,9 @@ source 'https://rubygems.org'
 gem 'rails'
 gem 'thin'
 gem 'omniauth'
-
 gem "omniauth-google-oauth2"
-
 gem 'google-api-client', :require => 'google/api_client'
-
 gem 'jquery-rails'
-
 gem 'pg'
 
 #gem 'zurb-foundation', '~> 4.0.0'
@@ -28,8 +24,6 @@ end
 
 
 group :development, :test do
-  gem 'sqlite3'
-  #gem 'rspec-rails', "~> 2.11"
   gem 'rr'
   gem "mechanize"
 end
