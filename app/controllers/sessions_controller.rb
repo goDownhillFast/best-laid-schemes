@@ -21,7 +21,7 @@ class SessionsController < ApplicationController
     session[:expires_at] = auth[:credentials][:expires_at].to_i
     session[:calendars] = {}
     session[:email] = auth[:info][:email]
-    redirect_to root_url
+    redirect_to calendars_url
 
     #respond_to do |format|
     #  format.html { redirect_to root_url, :notice => "Signed in!" }

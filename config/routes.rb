@@ -1,6 +1,6 @@
 Planner::Application.routes.draw do
 
-  root :to => 'calendars#index'
+  root :to => 'sessions#welcome'
 
   resources :users
   resources :locations

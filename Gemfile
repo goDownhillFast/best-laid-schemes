@@ -12,7 +12,7 @@ gem 'jquery-rails'
 
 gem 'pg'
 
-gem 'zurb-foundation', '~> 4.0.0'
+#gem 'zurb-foundation', '~> 4.0.0'
 
 gem "bcrypt-ruby"
 
