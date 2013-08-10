@@ -13,8 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require flot/jquery.flot
-//= require_tree .
-//= require foundation
+//= require foundation-js/foundation/foundation
 
 $(function () {
   $('.flot-placeholder').each(function (index) {
