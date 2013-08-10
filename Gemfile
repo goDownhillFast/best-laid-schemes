@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails'
-
+gem 'thin'
 gem 'omniauth'
 
 gem "omniauth-google-oauth2"
@@ -32,7 +32,6 @@ group :development, :test do
   #gem 'rspec-rails', "~> 2.11"
   gem 'rr'
   gem "mechanize"
-  gem 'unicorn'
 end
 
 group :test do
@@ -41,10 +40,6 @@ group :test do
   gem 'turn', :require => false
   gem 'factory_girl'
   gem "factory_girl_rails", "~> 4.0"
-end
-
-group :production do
-  gem 'thin'
 end
 
 # To use ActiveModel has_secure_password
