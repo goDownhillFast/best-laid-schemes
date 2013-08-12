@@ -21,6 +21,9 @@ class SessionsController < ApplicationController
     session[:expires_at] = auth[:credentials][:expires_at].to_i
     session[:calendars] = {}
     session[:email] = auth[:info][:email]
+    session[:time_zone] = google_data.get_time_zone
+    session[:time_zone_offset] = DateTime.now.in_time_zone(session[:time_zone]) - DateTime.now
+
     redirect_to calendars_url
 
     #respond_to do |format|

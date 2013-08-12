@@ -6,10 +6,7 @@ class CalendarsController < ApplicationController
   def index
     current_user
 
-    right_now = DateTime.now
-    week_ago = Time.now - 7.days
-
-    custom_start_month = DateTime.new(right_now.year, 7, 16)
+    right_now = DateTime.now + session[:time_zone_offset].hours
 
     #@month_left = get_category_totals({timeMin: right_now.strftime("%FT%T%:z"),
     #                                   timeMax: right_now.at_beginning_of_month.next_month.strftime("%FT%T%:z")})
