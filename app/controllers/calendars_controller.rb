@@ -20,11 +20,11 @@ class CalendarsController < ApplicationController
     #@custom_so_far = get_category_totals({timeMin: custom_start_month,
     #                                      timeMax: right_now})
 
-    @today_compare = get_category_totals({timeMin: right_now.at_beginning_of_day,
-                                             timeMax: right_now.at_beginning_of_day + 1.day})
+    @today_compare = get_category_totals({timeMin: right_now.at_beginning_of_day + session[:time_zone_offset].hours,
+                                             timeMax: right_now.at_beginning_of_day + 1.day + session[:time_zone_offset].hours})
 
-    @last_week_compare = get_category_totals({timeMin: right_now.at_beginning_of_day - 7.days,
-                                             timeMax: right_now.at_beginning_of_day - 6.days})
+    @last_week_compare = get_category_totals({timeMin: right_now.at_beginning_of_day - 7.days + session[:time_zone_offset].hours,
+                                             timeMax: right_now.at_beginning_of_day - 6.days + session[:time_zone_offset].hours})
 
     #future = get_category_totals({timeMin: right_now,
     #                                  timeMax: right_now + 1.week})
