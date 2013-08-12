@@ -22,7 +22,7 @@ class SessionsController < ApplicationController
     session[:calendars] = {}
     session[:email] = auth[:info][:email]
     session[:time_zone] = google_data.get_time_zone
-    session[:time_zone_offset] = DateTime.now.in_time_zone(session[:time_zone]) - DateTime.now
+    session[:time_zone_offset] = DateTime.now.in_time_zone(session[:time_zone]).utc_offset/3600 - DateTime.now.utc_offset/3600
 
     redirect_to calendars_url
 
