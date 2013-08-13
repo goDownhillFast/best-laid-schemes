@@ -9,19 +9,16 @@
       <div class="row activity-row" style="border-bottom:solid;border-bottom-color: gainsboro; border-bottom-width: 1px">
         <div class="row-12 columns activity-summary" data-activity-id='<%= activity.id %>'>
           <div class="large-4 columns">
-            <%= link_to(edit_activity_path(activity )) do %><%= activity.name %><% end %>
+            <%= link_to(edit_activity_path(activity)) do %><%= activity.name %>
+            <% end %>
           </div>
-          <div class="large-1 columns">
-            <%= @today_compare[category.id][:activities][activity.old_id][:total] || "-" %>
-          </div>
-          <div class="large-1 columns">
-            <%= @last_week_compare[category.id][:activities][activity.old_id][:total] || "-" %>
-          </div>
-          <div class="large-4 columns end activity-time-total">
-            <div class="flot-placeholder" data-time-total="<%= @one_week_ago[category.id][:activities][activity.old_id][:total] + @today_compare[category.id][:activities][activity.old_id][:total] - @last_week_compare[category.id][:activities][activity.old_id][:total] %>" data-time-budget="<%= activity.budget || '--' %>" style="height:30px; width: 100%;"></div>
+          <div class="large-6 columns end activity-time-total">
+            <span data-tooltip class="has-tip" title="You spent <%= @last_week_compare[category.id][:activities][activity.old_id][:total] %> hours last week, and have planned <%= @today_compare[category.id][:activities][activity.old_id][:total] %>  ">
+              <div class="flot-placeholder" data-time-total="<%= @one_week_ago[category.id][:activities][activity.old_id][:total] %>" data-time-budget="<%= activity.budget || '--' %>" style="height:30px; width: 100%;"></div>
+            </span>
           </div>
           <div class="large-2 columns">
-            <%= @one_week_ago[category.id][:activities][activity.old_id][:total] + @today_compare[category.id][:activities][activity.old_id][:total] - @last_week_compare[category.id][:activities][activity.old_id][:total] %> / <%= activity.budget %>
+            <%= @one_week_ago[category.id][:activities][activity.old_id][:total] %> / <%= activity.budget %>
           </div>
 
         </div>
@@ -34,17 +31,11 @@
           <%= link_to(edit_category_path(category)) do %>Total <%= category.name %>
           <% end %>
         </div>
-        <div class="large-1 columns">
-          <%= @today_compare[category.id][:total] || "-" %>
-        </div>
-        <div class="large-1 columns">
-          <%= @last_week_compare[category.id][:total] || "-" %>
-        </div>
-        <div class="large-4 columns end activity-time-total">
-          <div class="flot-placeholder" data-time-total="<%= @one_week_ago[category.id][:total] + @today_compare[category.id][:total] - @last_week_compare[category.id][:total] %>" data-time-budget="<%= category.budget || '--' %>" style="height:30px; width: 100%;"></div>
+        <div class="large-6 columns end activity-time-total">
+          <div class="flot-placeholder" data-time-total="<%= @one_week_ago[category.id][:total] %>" data-time-budget="<%= category.budget || '--' %>" style="height:30px; width: 100%;"></div>
         </div>
         <div class="large-2 columns end">
-          <%= @one_week_ago[category.id][:total] + @today_compare[category.id][:total] - @last_week_compare[category.id][:total] %> / <%= category.budget %>
+          <%= @one_week_ago[category.id][:total] %> / <%= category.budget %>
         </div>
       </div>
 

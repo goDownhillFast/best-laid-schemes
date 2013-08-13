@@ -2,55 +2,37 @@ require 'pp'
 require 'active_support/all'
 class CalendarsController < ApplicationController
 
-
   def index
     current_user
 
     right_now = DateTime.now - session[:time_zone_offset].hours
 
-    #@month_left = get_category_totals({timeMin: right_now.strftime("%FT%T%:z"),
-    #                                   timeMax: right_now.at_beginning_of_month.next_month.strftime("%FT%T%:z")})
-    #
-    #@month_total = get_category_totals({timeMin: right_now.at_beginning_of_month.strftime("%FT%T%:z"),
-    #                                    timeMax: right_now.at_beginning_of_month.next_month.strftime("%FT%T%:z")})
-    #
-    #@custom_left = get_category_totals({timeMin: custom_start_month,
-    #                                    timeMax: right_now.at_beginning_of_month.next_month.strftime("%FT%T%:z")})
+    @today_compare = get_category_totals({timeMin: right_now,
+                                          timeMax: right_now + 1.day})
 
-    #@custom_so_far = get_category_totals({timeMin: custom_start_month,
-    #                                      timeMax: right_now})
+    @last_week_compare = get_category_totals({timeMin: right_now - 7.days,
+                                              timeMax: right_now - 6.days})
 
-    @today_compare = get_category_totals({timeMin: right_now.at_beginning_of_day - session[:time_zone_offset].hours,
-                                             timeMax: right_now.at_beginning_of_day + 1.day - session[:time_zone_offset].hours})
-
-    @last_week_compare = get_category_totals({timeMin: right_now.at_beginning_of_day - 7.days - session[:time_zone_offset].hours,
-                                             timeMax: right_now.at_beginning_of_day - 6.days - session[:time_zone_offset].hours})
-
-    #future = get_category_totals({timeMin: right_now,
-    #                                  timeMax: right_now + 1.week})
+    #@last_week_this_week_diff = all_categories.each do |key, val|
+    #  val[:total] = @today_compare[key][:total] - @last_week_compare[key][:total]
+    #  val[:activities].each do |k,v|
+    #    v[:total] = @today_compare[key][:activities][k][:total] - @last_week_compare[key][:activities][k][:total]
+    #  end
+    #end
 
     @one_week_ago = get_category_totals({timeMin: right_now - 1.week,
-                                          timeMax: right_now})
+                                         timeMax: right_now})
 
-    #two_weeks_ago = get_category_totals({timeMin: right_now - 2.weeks,
-    #                                    timeMax: right_now - 1.week})
-    #
-    #three_weeks_ago = get_category_totals({timeMin: right_now - 3.weeks,
-    #                                     timeMax: right_now - 2.weeks})
     @categories = current_user.categories.includes(:activities).all
 
-    #@weekly_time_periods = [one_week_ago,two_weeks_ago,three_weeks_ago]
-
-    #@daily_time_periods = [today_compare,last_week_compare,future]
-
   end
-  
-  
+
+
   def get_category_totals(opts={})
     opts[:singleEvents] ||= true
     calendar_data = google_data.list_events(opts)
     decoded_calendar_data = ActiveSupport::JSON.decode(calendar_data.body)['items']
-    
+
     if !decoded_calendar_data.nil?
       #decoded_calendar_data.reject! { |item| item['summary'][0..2].to_i == 0 }
 
