@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require flot/jquery.flot
+//= require foundation/foundation
 //=  foundation/foundation.alerts
 //=  foundation/foundation.clearing
 //=  foundation/foundation.cookie
