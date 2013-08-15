@@ -32,7 +32,9 @@
           <% end %>
         </div>
         <div class="large-6 columns end activity-time-total">
-          <div class="flot-placeholder" data-time-total="<%= @one_week_ago[category.id][:total] %>" data-time-budget="<%= category.budget || '--' %>" style="height:30px; width: 100%;"></div>
+           <span data-tooltip class="has-tip" title="You spent <%= @last_week_compare[category.id][:total] %> hours last week, and have planned <%= @today_compare[category.id][:total] %>  ">
+             <div class="flot-placeholder" data-time-total="<%= @one_week_ago[category.id][:total] %>" data-time-budget="<%= category.budget || '--' %>" style="height:30px; width: 100%;"></div>
+           </span>
         </div>
         <div class="large-2 columns end">
           <%= @one_week_ago[category.id][:total] %> / <%= category.budget %>
