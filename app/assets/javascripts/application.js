@@ -13,22 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require flot/jquery.flot
-//= require foundation/foundation
-//=  foundation/foundation.alerts
-//=  foundation/foundation.clearing
-//=  foundation/foundation.cookie
-//=  foundation/foundation.dropdown
-//=  foundation/foundation.forms
-//=  foundation/foundation.joyride
-//=  foundation/foundation.magellan
-//=  foundation/foundation.orbit
-//=  foundation/foundation.reveal
-//=  foundation/foundation.section
-//=  foundation/foundation.tooltips
-//=  foundation/foundation.topbar
-//=  foundation/foundation.interchange
-//=  foundation/foundation.placeholder
-//=  foundation/foundation.abide
+//= require foundation/index
+//= require modernizr/modernizr
 
 $(document).foundation();
 $(function () {
