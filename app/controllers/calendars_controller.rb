@@ -5,7 +5,7 @@ class CalendarsController < ApplicationController
   def index
     current_user
 
-    right_now = DateTime.now - session[:time_zone_offset].hours
+    right_now = DateTime.now # - session[:time_zone_offset].hours only use if you need beginning_of_day
 
     @today_compare = get_category_totals({timeMin: right_now,
                                           timeMax: right_now + 1.day})
