@@ -1,23 +1,21 @@
-<h1>Listing categories</h1>
+<div class="row">
+  <div class="row-12 columns">
+    <h1>Categories</h1>
+  </div>
+  <% @categories.each do |category| %>
+    <div class="row-12 columns category" data-category-id="<%= category.id %>">
+      <div class="large-4 columns"><%= category.name %></div>
+      <div class="large-1 large-offset-1 columns"><%= category.budget || "--" %></div>
+      <div class="large-1 large-offset-1 columns"><%= link_to 'Edit', edit_category_path(category) %></div>
+      <div class="large-1 columns end">
+        <%= link_to "<i class='icon-remove'></i>".html_safe, category, method: :delete, data: {confirm: 'Delete category and all related activities?'} %>
+      </div>
+    </div>
+    <% category.activities.each do |activity| %>
+      <%= render :partial => 'activities/mini_activity', locals: {activity: activity} %>
+    <% end %>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @categories.each do |category| %>
-  <tr>
-    <td><%= category.name %></td>
-    <td><%= link_to 'Show', category %></td>
-    <td><%= link_to 'Edit', edit_category_path(category) %></td>
-    <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
+  <% end %>
+</div>
 
 <%= link_to 'New Category', new_category_path %>

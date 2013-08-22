@@ -1,0 +1,9 @@
+<div class="row-12 columns activity" data-activity-id="<%= activity.id %>" data-category-id="<%= activity.category.id %>">
+  <div class="large-4 large-offset-1 columns"><%= activity.name %></div>
+  <div class="large-1 columns"><%= activity.budget || "--" %></div>
+  <div class="large-1 columns"><%= activity.old_id %></div>
+  <div class="large-1 columns"><i class='icon-pencil edit-activity'></i></div>
+  <div class="large-1 columns end">
+    <%= link_to "<i class='icon-remove'></i>".html_safe, activity, method: :delete, data: {confirm: 'Delete activity?'} %>
+  </div>
+</div>

@@ -15,6 +15,7 @@
 //= require flot/jquery.flot
 //= require foundation/index
 //= require modernizr/modernizr
+//= require categories
 
 $(document).foundation();
 $(function () {

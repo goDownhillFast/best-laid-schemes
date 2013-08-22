@@ -1,0 +1,19 @@
+<%= form_for(@activity, remote: true, html: {'data-type' => 'json'}) do |f| %>
+  <div class="large-12 columns">
+    <div class="large-4 large-offset-1 columns">
+      <%= f.text_field :name, placeholder: "New Activity Name" %>
+    </div>
+    <div class="large-1 columns">
+      <%= f.number_field :budget, placeholder: "Hours per Week" %>
+    </div>
+    <div class="large-1 columns">
+      <%= f.number_field :old_id %>
+    </div>
+    <div class="large-1 columns end">
+      <i class="icon-ok form-submit"></i>
+    </div>
+  </div>
+
+  <%= f.hidden_field :category_id %>
+
+<% end %>
