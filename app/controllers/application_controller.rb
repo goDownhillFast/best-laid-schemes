@@ -10,17 +10,19 @@ class ApplicationController < ActionController::Base
   end
 
   def current_user
-    #if session[:expires_at] && DateTime.new < Time.at(session[:expires_at]).to_datetime && session[:auth_token]
-    #  @current_user = User.find_or_create_by_email(session[:email])
-    #else
-    #  @current_user = User.find_or_create_by_email(session[:email])
-    #end
     @current_user ||= User.find_or_create_by_email(session[:email])
+  end
+
+  def setup_orange_planner
+    calendars_json = google_data.calendar_list.body
+    parsed_calendars = ActiveSupport::JSON.decode(calendars_json)
+    calendar_names = parsed_calendars['items'].map { |c| c['summary'] }
+    google_data.new_orange_calendar unless calendar_names.include?('Orange Planner')
   end
 
 end
 
-#
+# JSON FROM EXPIRED TOKEN
 #{
 #    "error": {
 #    "errors": [
