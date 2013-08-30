@@ -1,3 +1,15 @@
 // Place all the styles related to the Categories controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.activity {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.edit_activity {
+  .columns {padding:  0}
+  input {
+    margin: 0;
+  }
+}
