@@ -7,6 +7,11 @@ class GoogleData
     @calendar = @client.discovered_api('calendar', 'v3')
   end
 
+  def setup_orange_calendar
+    @client.execute(:api_method => @calendar.calendars.insert,
+    :parameters => {'summary' =>'orange_planner'})
+  end
+
   def get_time_zone
     ActiveSupport::JSON.decode(@client.execute(api_method: @calendar.settings.get, :parameters => {'setting' => 'timezone'}).response.env[:body])['value']
   end
