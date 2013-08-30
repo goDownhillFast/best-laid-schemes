@@ -1,6 +1,6 @@
 require 'pp'
 require 'active_support/all'
-class CalendarsController < ApplicationController
+class BudgetController < ApplicationController
 
   def index
     current_user

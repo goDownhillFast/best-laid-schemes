@@ -1,5 +1,5 @@
 require 'pp'
-class ActivitiesController < ApplicationController
+class PlanController < ApplicationController
   # GET /activities
   # GET /activities.json
   def index
@@ -69,10 +69,8 @@ class ActivitiesController < ApplicationController
 
     respond_to do |format|
       if @activity.update_attributes(params[:activity])
-        #format.html { redirect_to activities_url, notice: 'Activity was successfully updated.' }
         format.json { render json: {activity: render_to_string('_mini_activity', layout: false, formats: [:html], locals: {activity: @activity})} }
       else
-        #format.html { render action: "edit" }
         format.json { render json: @activity.errors, status: :unprocessable_entity }
       end
     end
@@ -85,7 +83,7 @@ class ActivitiesController < ApplicationController
     @activity.destroy
 
     respond_to do |format|
-      format.html { redirect_to categories_url }
+      format.html { redirect_to manage_url }
       format.json { head :no_content }
     end
   end
