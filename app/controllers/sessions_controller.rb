@@ -24,7 +24,7 @@ class SessionsController < ApplicationController
     session[:time_zone] = google_data.get_time_zone
     session[:time_zone_offset] = DateTime.now.in_time_zone(session[:time_zone]).utc_offset/3600 - DateTime.now.utc_offset/3600
 
-    redirect_to calendars_url
+    redirect_to budget_url
 
     #respond_to do |format|
     #  format.html { redirect_to root_url, :notice => "Signed in!" }
