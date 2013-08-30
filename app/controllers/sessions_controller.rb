@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
 
     setup_orange_planner
 
-    redirect_to calendars_url
+    redirect_to budget_url
   end
 
 end
