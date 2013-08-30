@@ -1,5 +1,5 @@
 require 'pp'
-class ActivitiesController < ApplicationController
+class PlanController < ApplicationController
   # GET /activities
   # GET /activities.json
   def index

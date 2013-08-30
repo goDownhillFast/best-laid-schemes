@@ -2,6 +2,10 @@ Planner::Application.routes.draw do
 
   root :to => 'sessions#welcome'
 
+  match '/budget' => 'budget#index', :as => 'budget'
+  match '/plan' => 'plan#index', :as => 'plan'
+  match '/manage' => 'manage#index', :as => 'manage'
+  
   resources :users
   resources :activities
   resources :tasks
