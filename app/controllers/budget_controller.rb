@@ -30,6 +30,7 @@ class BudgetController < ApplicationController
 
   def get_category_totals(opts={})
     opts[:singleEvents] ||= true
+    opts[:calendarId] = session[:calendar_id]
     calendar_data = google_data.list_events(opts)
     decoded_calendar_data = ActiveSupport::JSON.decode(calendar_data.body)['items']
 
@@ -61,6 +62,7 @@ class BudgetController < ApplicationController
     activities = all_activities
 
     calendar_data.each do |item|
+      next if item['status'] == "cancelled"
       g_activity_id = item['summary'][0..2].to_i
       this_activity = activities[g_activity_id]
       next if this_activity.nil?

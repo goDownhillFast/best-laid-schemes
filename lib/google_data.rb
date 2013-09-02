@@ -14,12 +14,20 @@ class GoogleData
                     )
   end
 
+  def find_calendar_id
+    calendars_json = calendar_list.body
+    parsed_calendars = ActiveSupport::JSON.decode(calendars_json)
+    all_calendars = {}
+    parsed_calendars['items'].each { |c| all_calendars[c['summary']] = c['id'] }
+    new_orange_calendar unless all_calendars['Orange Planner'].present?
+    all_calendars['Orange Planner']
+  end
+
   def get_time_zone
     ActiveSupport::JSON.decode(@client.execute(api_method: @calendar.settings.get, :parameters => {'setting' => 'timezone'}).response.env[:body])['value']
   end
 
   def list_events(opts={})
-    opts[:calendarId] ||= 'primary'
     @client.execute(api_method: @calendar.events.list,
                     parameters: opts)
   end
@@ -31,9 +39,9 @@ class GoogleData
         :headers => {'Content-Type' => 'application/json'})
   end
 
-  def new_event(calendar_id="primary", opts={})
+  def new_event(opts={})
     @client.execute(api_method: @calendar.events.insert,
-                    parameters: {calendarId: calendar_id},
+                    parameters: {calendarId: opts[:calendar_id]},
                     body: JSON.dump({summary: opts[:title],
                                      location: opts[:location],
                                      start: {
