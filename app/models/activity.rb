@@ -23,10 +23,12 @@ class Activity < ActiveRecord::Base
   private
 
   def activities_sum_is_less_than_category
-    activities_sum = category.activities.map {|m| m.budget || 0}.reduce(0, :+)
-    category_budget = category.budget || 0
+    if category
+      activities_sum = category.activities.map { |m| m.budget || 0 }.reduce(0, :+)
+      category_budget = category.budget || 0
 
-    errors.add(:activity, "should be less than the category total of " + category_budget.to_s + " hours.") if activities_sum > category_budget
+      errors.add(:activity, "should be less than the category total of " + category_budget.to_s + " hours.") if activities_sum > category_budget
+    end
   end
 
 end

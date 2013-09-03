@@ -16,4 +16,9 @@ class SessionsController < ApplicationController
     redirect_to budget_url
   end
 
+  def destroy
+    reset_session
+    redirect_to root_url
+  end
+
 end

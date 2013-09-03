@@ -49,17 +49,9 @@ class PlanController < ApplicationController
   # POST /activities
   # POST /activities.json
   def create
-    @activity = current_user.activities.new(params[:activity])
-
-    respond_to do |format|
-      if @activity.save
-        format.html { redirect_to @activity, notice: 'Activity was successfully created.' }
-        format.json { render json: @activity, status: :created, location: @activity }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @activity.errors, status: :unprocessable_entity }
-      end
-    end
+    @activity = current_user.activities.create!(params[:activity])
+    pp @activity
+    redirect_to plan_index_path, notice: 'Activity was successfully created.'
   end
 
   # PUT /activities/1
@@ -70,6 +62,7 @@ class PlanController < ApplicationController
     respond_to do |format|
       if @activity.update_attributes(params[:activity])
         format.json { render json: {activity: render_to_string('_mini_activity', layout: false, formats: [:html], locals: {activity: @activity})} }
+        format.html { redirect_to plan_path, notice: 'Activity was successfully created.' }
       else
         format.json { render json: @activity.errors, status: :unprocessable_entity }
       end
@@ -78,7 +71,7 @@ class PlanController < ApplicationController
 
   # DELETE /activities/1
   # DELETE /activities/1.json
-  def destroy
+  def delete
     @activity = current_user.activities.find(params[:id])
     @activity.destroy
 
