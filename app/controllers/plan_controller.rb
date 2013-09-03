@@ -62,7 +62,7 @@ class PlanController < ApplicationController
     respond_to do |format|
       if @activity.update_attributes(params[:activity])
         format.json { render json: {activity: render_to_string('_mini_activity', layout: false, formats: [:html], locals: {activity: @activity})} }
-        format.html { redirect_to plan_path, notice: 'Activity was successfully created.' }
+        format.html { redirect_to plan_index_path, notice: 'Activity was successfully updated.' }
       else
         format.json { render json: @activity.errors, status: :unprocessable_entity }
       end
