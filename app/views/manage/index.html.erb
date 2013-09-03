@@ -12,7 +12,7 @@
       </div>
     </div>
     <% category.activities.each do |activity| %>
-      <%= render :partial => 'activities/mini_activity', locals: {activity: activity} %>
+      <%= render :partial => 'plan/mini_activity', locals: {activity: activity} %>
     <% end %>
 
   <% end %>
