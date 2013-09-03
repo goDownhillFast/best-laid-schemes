@@ -1,5 +1,5 @@
 function editActivityForm(activity) {
-  $.ajax({url: '../plan/' + $(activity).attr('data-activity-id'),
+  $.ajax({url: '../plan/' + $(activity).attr('data-activity-id') + '/edit',
     dataType: 'json',
     complete: function (response) {
       $(activity).replaceWith($(response.responseText).on('ajax:success', function (evt, response) {
