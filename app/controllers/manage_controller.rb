@@ -7,7 +7,7 @@ class ManageController < ApplicationController
 
   def edit
     @category = current_user.categories.find(params[:id])
-    self.class.layout false
+    #self.class.layout false
   end
 
   def create
