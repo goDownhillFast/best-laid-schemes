@@ -4,7 +4,8 @@ Planner::Application.routes.draw do
 
   match '/budget'       => 'budget#index',    :as => 'budget'
   match '/plan'         => 'plan#index',      :as => 'plan'
-  match '/plan/:id'     => 'plan#edit',       :as => 'activity'
+  get '/plan/:id'       => 'plan#edit',       :as => 'activity'
+  post '/plan'          => 'plan#create',     :as => 'create_activity'
   get   '/manage'       => 'manage#index',    :as => 'manage'
   post  '/manage'       => 'manage#create',   :as => 'create_category'
   get '/manage/:id'     => 'manage#edit',     :as => 'category'
