@@ -208,7 +208,7 @@ $topbar-sticky-class: ".sticky" !default;
   }
 
   // Right and Left Navigation that stacked by default
-  .top-bar-section {
+  .top-bar section {
     #{$default-float}: 0;
     position: relative;
     width: auto;
@@ -388,7 +388,7 @@ $topbar-sticky-class: ".sticky" !default;
       margin-bottom: $topbar-margin-bottom;
     }
 
-    .top-bar-section {
+    .top-bar section {
       @include single-transition(none,0,0);
       #{$default-float}: 0 !important;
 
@@ -504,7 +504,7 @@ $topbar-sticky-class: ".sticky" !default;
     
     // Degrade gracefully when Javascript is disabled. Displays dropdown and changes 
     // background & text color on hover.
-    .no-js .top-bar-section {
+    .no-js .top-bar section {
 	  ul li {
         // Apply the hover link color when it has that class
         &:hover > a {

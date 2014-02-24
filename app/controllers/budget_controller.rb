@@ -8,10 +8,10 @@ class BudgetController < ApplicationController
     right_now = DateTime.now # - session[:time_zone_offset].hours only use if you need beginning_of_day
 
     @today_compare = get_category_totals({timeMin: right_now,
-                                          timeMax: right_now + 1.day})
+                                          timeMax: right_now + 1.week})
 
-    @last_week_compare = get_category_totals({timeMin: right_now - 7.days,
-                                              timeMax: right_now - 6.days})
+    @last_week_compare = get_category_totals({timeMin: right_now - 1.week,
+                                              timeMax: right_now})
 
     #@last_week_this_week_diff = all_categories.each do |key, val|
     #  val[:total] = @today_compare[key][:total] - @last_week_compare[key][:total]
