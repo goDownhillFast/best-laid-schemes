@@ -12,11 +12,17 @@
             <%= link_to(edit_activity_path(activity)) do %><%= activity.name %>
             <% end %>
           </div>
-          <div class="large-6 columns end activity-time-total" >
+          <div class="large-2 columns end activity-time-total" >
               <div class="flot-placeholder has-tip tip-top" data-time-total="<%= @one_week_ago[category.id][:activities][activity.old_id][:total] %>" data-time-budget="<%= activity.budget || '--' %>" style="height:30px; width: 100%;" data-tooltip title="You spent <%= @last_week_compare[category.id][:activities][activity.old_id][:total] %> hours last week, and have planned <%= @today_compare[category.id][:activities][activity.old_id][:total] %>  "></div>
           </div>
           <div class="large-2 columns">
             <%= @one_week_ago[category.id][:activities][activity.old_id][:total] %> / <%= activity.budget %>
+          </div>
+          <div class="large-2 columns end activity-time-total" >
+            <div class="flot-placeholder has-tip tip-top" data-time-total="<%= @next_week[category.id][:activities][activity.old_id][:total] %>" data-time-budget="<%= activity.budget || '--' %>" style="height:30px; width: 100%;" data-tooltip title="You spent <%= @last_week_compare[category.id][:activities][activity.old_id][:total] %> hours last week, and have planned <%= @today_compare[category.id][:activities][activity.old_id][:total] %>  "></div>
+          </div>
+          <div class="large-2 columns">
+            <%= @next_week[category.id][:activities][activity.old_id][:total] %> / <%= activity.budget %>
           </div>
 
         </div>
