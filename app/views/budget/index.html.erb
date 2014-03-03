@@ -39,16 +39,16 @@
         <div class="large-2 columns end">
           <%= category.budget %>
         </div>
-        <div class="large-6 columns end activity-time-total">
+        <div class="large-2 columns end activity-time-total">
           <div class="flot-placeholder has-tip tip-top" data-time-total="<%= @one_week_ago[category.id][:total] %>" data-time-budget="<%= category.budget || '--' %>" style="height:30px; width: 100%;" data-tooltip title="You spent <%= @last_week_compare[category.id][:total] %> hours last week, and have planned <%= @today_compare[category.id][:total] %>  "></div>
         </div>
-        <div class="large-2 columns end">
+        <div class="large-1 columns end">
           <%= @one_week_ago[category.id][:total] %> %>
         </div>
-        <div class="large-6 columns end activity-time-total">
+        <div class="large-2 columns end activity-time-total">
           <div class="flot-placeholder has-tip tip-top" data-time-total="<%= @next_week[category.id][:total] %>" data-time-budget="<%= category.budget || '--' %>" style="height:30px; width: 100%;" data-tooltip title="You spent <%= @last_week_compare[category.id][:total] %> hours last week, and have planned <%= @today_compare[category.id][:total] %>  "></div>
         </div>
-        <div class="large-2 columns end">
+        <div class="large-1 columns end">
           <%= @next_week[category.id][:total] %> %>
         </div>
       </div>
