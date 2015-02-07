@@ -14,7 +14,7 @@
     <% category.activities.each do |activity| %>
       <%= render :partial => 'plan/mini_activity', locals: {activity: activity} %>
     <% end %>
-
+  <hr>
   <% end %>
   
   <%= form_for @category, :url => create_category_path do |f| %>
