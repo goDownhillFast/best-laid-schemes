@@ -6,7 +6,7 @@
     <div class="row-12 columns category" data-category-id="<%= category.id %>">
       <div class="large-4 columns"><%= category.name %></div>
       <div class="large-1 large-offset-1 columns"><%= category.budget || "--" %></div>
-      <div class="large-1 large-offset-1 columns"><%= link_to 'Edit', category_path(category), 'data-reveal-id' => "myModal", 'data-reveal-ajax' => "true" %></div>
+      <div class="large-1 large-offset-1 columns"><%= link_to 'Edit', category_path(category) %></div>
       <div class="large-1 columns end">
         <%= link_to "<i class='icon-remove'></i>".html_safe, category, method: :delete, data: {confirm: 'Delete category and all related activities?'} %>
       </div>
