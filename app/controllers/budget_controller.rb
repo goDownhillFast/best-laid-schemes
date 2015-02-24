@@ -7,7 +7,7 @@ class BudgetController < ApplicationController
 
     right_now = DateTime.now
 
-    beginning_point = (right_now - session[:time_zone_offset].hours).beginning_of_week
+    beginning_point = (right_now - session[:time_zone_offset].hours).beginning_of_week - session[:time_zone_offset].hours
 
     @this_week_to_date = get_category_totals({timeMin: beginning_point,
                                           timeMax: right_now})
@@ -40,7 +40,7 @@ class BudgetController < ApplicationController
     decoded_calendar_data = ActiveSupport::JSON.decode(calendar_data.body)['items']
 
     if !decoded_calendar_data.nil?
-      #decoded_calendar_data.reject! { |item| item['summary'][0..2].to_i == 0 }
+      #decoded_calendar_data.re ject! { |item| item['summary'][0..2].to_i == 0 }
 
       elapsed_time = opts[:timeMax] - opts[:timeMin]
       category_totals = get_all_categories
