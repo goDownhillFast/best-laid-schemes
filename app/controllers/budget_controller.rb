@@ -5,26 +5,28 @@ class BudgetController < ApplicationController
   def index
     current_user
 
-    right_now = DateTime.now # - session[:time_zone_offset].hours only use if you need beginning_of_day
+    right_now = DateTime.now
 
-    @today_compare = get_category_totals({timeMin: right_now,
-                                          timeMax: right_now + 1.hour})
+    beginning_point = (right_now - session[:time_zone_offset].hours).beginning_of_week
 
-    @last_week_compare = get_category_totals({timeMin: right_now - 7.days,
-                                              timeMax: right_now - 6.days})
+    @this_week_to_date = get_category_totals({timeMin: beginning_point,
+                                          timeMax: right_now})
+
+    @last_week_to_date = get_category_totals({timeMin: beginning_point - 7.days,
+                                              timeMax: right_now - 7.days})
 
     #@last_week_this_week_diff = all_categories.each do |key, val|
-    #  val[:total] = @today_compare[key][:total] - @last_week_compare[key][:total]
+    #  val[:total] = @this_week_to_date[key][:total] - @last_week_to_date[key][:total]
     #  val[:activities].each do |k,v|
-    #    v[:total] = @today_compare[key][:activities][k][:total] - @last_week_compare[key][:activities][k][:total]
+    #    v[:total] = @this_week_to_date[key][:activities][k][:total] - @last_week_to_date[key][:activities][k][:total]
     #  end
     #end
 
-    @one_week_ago = get_category_totals({timeMin: right_now - 1.week,
-                                         timeMax: right_now})
+    @last_week_full = get_category_totals({timeMin: beginning_point - 1.week,
+                                         timeMax: beginning_point})
 
-    @next_week = get_category_totals({timeMin: right_now,
-                                         timeMax: right_now + 1.week})
+    @this_week_full = get_category_totals({timeMin: beginning_point,
+                                         timeMax: beginning_point + 1.week})
 
     @categories = current_user.categories.includes(:activities).all
 
