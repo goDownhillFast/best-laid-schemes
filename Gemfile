@@ -8,6 +8,8 @@ gem 'google-api-client', :require => 'google/api_client'
 gem 'jquery-rails'
 gem 'pg'
 
+gem 'active_model_serializers'
+
 gem 'font-awesome-rails'
 #gem 'zurb-foundation', '~> 4.0.0'
 

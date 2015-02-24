@@ -1,5 +1,9 @@
 Planner::Application.routes.draw do
 
+  scope :module => 'api' do
+
+  end
+
   root :to => 'sessions#welcome'
 
   match "/signout"      => "sessions#destroy", :as => :signout
