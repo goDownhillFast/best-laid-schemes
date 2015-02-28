@@ -1,4 +1,3 @@
-require 'pp'
 require 'active_support/all'
 class BudgetController < ApplicationController
 
@@ -32,20 +31,28 @@ class BudgetController < ApplicationController
 
   end
 
+  private
 
-  def get_category_totals(opts={})
+  def calendar_data(opts={})
+    @calendar_data ||= get_calendar_data(opts)
+  end
+
+  def get_calendar_data(opts={})
+    return if @calendar_data
     opts[:singleEvents] ||= true
     opts[:calendarId] = session[:calendar_id]
     calendar_data = google_data.list_events(opts)
-    decoded_calendar_data = ActiveSupport::JSON.decode(calendar_data.body)['items']
+    ActiveSupport::JSON.decode(calendar_data.body)['items']
+  end
 
-    if !decoded_calendar_data.nil?
-      #decoded_calendar_data.re ject! { |item| item['summary'][0..2].to_i == 0 }
+  def get_category_totals(opts={})
+    if !calendar_data.nil?
+      #calendar_data.reject! { |item| item['summary'][0..2].to_i == 0 }
 
       elapsed_time = opts[:timeMax] - opts[:timeMin]
       category_totals = get_all_categories
 
-      convert_gcal_data(decoded_calendar_data).each do |key, val|
+      convert_gcal_data(calendar_data).each do |key, val|
         cat_key = val[:category][:id]
         category_totals[cat_key][:activities][key][:total] = val[:events].inject(0) { |sum, hash| sum + hash[:time] }
       end
