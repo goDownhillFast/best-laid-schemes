@@ -31,6 +31,7 @@ end
 group :test do
   # Pretty printed test output
   gem "watir"
+  gem 'rspec'
   gem 'turn', :require => false
   gem 'factory_girl'
   gem "factory_girl_rails", "~> 4.0"
