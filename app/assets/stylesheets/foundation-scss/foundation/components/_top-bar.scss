@@ -367,7 +367,14 @@ $topbar-sticky-class: ".sticky" !default;
       .toggle-topbar { display: none; }
 
       .title-area { float: $default-float; }
-      .name h1 a { width: auto; }
+      .name h1 a {
+        width: auto;
+        height: 45px;
+      }
+
+      .main-logo {
+        height: $topbar-height
+      }
 
       input,
       .button {
