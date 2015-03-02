@@ -3,3 +3,9 @@ development:
   encoding: unicode
   database: orange
   host: 127.0.0.1
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: orange_test
+  host: 127.0.0.1
