@@ -1,5 +1,7 @@
-require 'pp'
 class PlanController < ApplicationController
+
+  before_filter :require_current_user
+
   # GET /activities
   # GET /activities.json
   def index
@@ -50,7 +52,6 @@ class PlanController < ApplicationController
   # POST /activities.json
   def create
     @activity = current_user.activities.create!(params[:activity])
-    pp @activity
     redirect_to plan_index_path, notice: 'Activity was successfully created.'
   end
 
@@ -81,5 +82,11 @@ class PlanController < ApplicationController
     end
   end
 
+  private
 
+  def require_current_user
+    unless current_user
+      head :forbidden
+    end
+  end
 end
