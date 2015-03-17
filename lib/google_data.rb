@@ -1,4 +1,3 @@
-require 'pp'
 class GoogleData
 
   def initialize(token)
@@ -27,10 +26,6 @@ class GoogleData
     ActiveSupport::JSON.decode(@client.execute(api_method: @calendar.settings.get, :parameters => {'setting' => 'timezone'}).response.env[:body])['value']
   end
 
-  def list_events(opts={})
-    @client.execute(api_method: @calendar.events.list,
-                    parameters: opts)
-  end
 
   def calendar_list
     @client.execute(
@@ -39,19 +34,4 @@ class GoogleData
         :headers => {'Content-Type' => 'application/json'})
   end
 
-  def new_event(opts={})
-    @client.execute(api_method: @calendar.events.insert,
-                    parameters: {calendarId: opts[:calendar_id]},
-                    body: JSON.dump({summary: opts[:title],
-                                     location: opts[:location],
-                                     start: {
-                                         dateTime: opts[:start_time]
-                                     },
-                                     end: {
-                                         dateTime: opts[:end_time]
-                                     }
-                                    }),
-                    headers: {'Content-Type' => 'application/json'})
-
-  end
 end

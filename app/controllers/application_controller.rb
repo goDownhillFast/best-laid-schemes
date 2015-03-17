@@ -3,10 +3,10 @@ require 'pp'
 
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  helper_method :google_data, :current_user
+  before_filter :google_data
 
-  def google_data
-    GoogleData.new(session[:auth_token])
+  def events
+    Event.new(session)
   end
 
   def current_user
