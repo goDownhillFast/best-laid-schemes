@@ -39,11 +39,15 @@ class Event
     data.map do |event|
       g_activity_id = event['summary'].slice!(0,4).to_i
       next unless g_activity_id > 0 && event['status'] != "cancelled"
-      {
+      event_start = Time.parse(event['start']['dateTime'])
+      event_end = Time.parse(event['end']['dateTime'])
+
+      {   start: event_start,
+          end: event_end,
           name: event['summary'],
           old_activity_id: g_activity_id,
           google_event_id: event['id'],
-          time: (Time.parse(event['end']['dateTime']) - Time.parse(event['start']['dateTime']))/3600
+          time: (event_end - event_start)/3600
       }
     end
   end

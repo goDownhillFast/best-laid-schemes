@@ -1,4 +1,4 @@
-class GoogleData
+class GoogleCalendar
 
   def initialize(token)
     @client = Google::APIClient.new

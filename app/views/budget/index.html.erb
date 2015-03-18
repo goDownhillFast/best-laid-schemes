@@ -17,25 +17,24 @@
   <div class="row category">
     <% category.activities.each do |activity| %>
       <% next unless activity.budget && activity.budget > 0 %>
-      <%# next unless @last_week_full.inject(0) {|sum, hash| sum + hash[category.id][:activities][activity.old_id][:total] } > 0 %>
       <div class="row activity-row">
         <div class="row-12 columns activity-summary" data-activity-id='<%= activity.id %>'>
           <div class="large-4 columns">
-            <%= link_to(edit_activity_path(activity)) do %><%= activity.name %>
+            <%= link_to(edit_activity_path(activity)) do %>
+              <%= activity.name %>
             <% end %>
           </div>
-          <div class="large-2 columns"><%= activity.budget %></div>
-          <div class="large-2 columns activity-time-total">
-            <div class="flot-placeholder has-tip tip-top" data-time-total="<%= @last_week_full[category.id][:activities][activity.old_id][:total] %>" data-time-budget="<%= activity.budget || '--' %>" style="height:30px; width: 100%;" data-tooltip title="You spent <%= @last_week_to_date[category.id][:activities][activity.old_id][:total] %> hours last week, and have planned <%= @this_week_to_date[category.id][:activities][activity.old_id][:total] %>  "></div>
-          </div>
-          <div class="large-1 columns">
-            <%= @last_week_full[category.id][:activities][activity.old_id][:total] %>
-          </div>
-          <div class="large-2 columns end activity-time-total">
-            <div class="flot-placeholder has-tip tip-top" data-time-total="<%= @this_week_full[category.id][:activities][activity.old_id][:total] %>" data-time-budget="<%= activity.budget || '--' %>" style="height:30px; width: 100%;" data-tooltip title="You spent <%= @last_week_to_date[category.id][:activities][activity.old_id][:total] %> hours last week, and have planned <%= @this_week_to_date[category.id][:activities][activity.old_id][:total] %>  "></div>
-          </div>
-          <div class="large-1 columns">
-            <%= @this_week_full[category.id][:activities][activity.old_id][:total] %>
+          <div class="large-8 columns">
+            <div class="row">
+              <% [0..6].each do |i| %>
+                <div class="large-1 columns">
+                  <%= event_day_activity_total(activity.old_id, i) %>
+                </div>
+                <div class="large-1 columns">
+                  <%#= event_week_activity_total(activity.old_id) %>
+                </div>
+              <% end %>
+            </div>
           </div>
 
         </div>
@@ -45,27 +44,16 @@
     <div class="row">
       <div class="row-12 columns category-total">
         <div class="large-4 columns">
-          <%= link_to(category_path(category)) do %>Total <%= category.name %>
+          <%= link_to(category_path(category)) do %>
+            Total <%#= category.name %>
           <% end %>
         </div>
-        <div class="large-2 columns end">
-          <%= category.budget %>
-        </div>
-        <div class="large-2 columns end activity-time-total">
-          <div class="flot-placeholder has-tip tip-top" data-time-total="<%= @last_week_full[category.id][:total] %>" data-time-budget="<%= category.budget || '--' %>" style="height:30px; width: 100%;" data-tooltip title="You spent <%= @last_week_to_date[category.id][:total] %> hours last week, and have planned <%= @this_week_to_date[category.id][:total] %>  "></div>
-        </div>
-        <div class="large-1 columns end">
-          <%= @last_week_full[category.id][:total] %>
-        </div>
-        <div class="large-2 columns end activity-time-total">
-          <div class="flot-placeholder has-tip tip-top" data-time-total="<%= @this_week_full[category.id][:total] %>" data-time-budget="<%= category.budget || '--' %>" style="height:30px; width: 100%;" data-tooltip title="You spent <%= @last_week_to_date[category.id][:total] %> hours last week, and have planned <%= @this_week_to_date[category.id][:total] %>  "></div>
-        </div>
-        <div class="large-1 columns end">
-          <%= @this_week_full[category.id][:total] %>
+        <div class="large-8 columns">
+          <% [0..6].each do |i| %>
+            <%#= event_day_category_total(category, i) %>
+          <% end %>
         </div>
       </div>
-
-
     </div>
   </div>
 <% end %>
