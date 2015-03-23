@@ -15,13 +15,14 @@ class BudgetController < ApplicationController
   end
 
   def time_by_activity(event_set, old_activity_id, i = nil)
-    if i
-      event_set.select! do |event|
-        event[:old_activity_id] === old_activity_id && event[:start].wday === i
-      end
+    selected_events = event_set.select do |event|
+      correct_activity_id = event[:old_activity_id] === old_activity_id
+      correct_day = i ? event[:start].wday === i : true
+
+      correct_activity_id && correct_day
     end
 
-    event_set.map { |e| e[:time] }.reduce(:+)
+    selected_events.map { |e| e[:time] }.reduce(:+)
   end
 
   def day_name(i)
