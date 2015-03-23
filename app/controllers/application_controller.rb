@@ -20,7 +20,7 @@ class ApplicationController < ActionController::Base
   end
 
   def beginning_of_week
-    (right_now - session[:time_zone_offset].hours).beginning_of_week - session[:time_zone_offset].hours
+    (right_now - session[:time_zone_offset].hours).beginning_of_week - 1.day - session[:time_zone_offset].hours
   end
 
 end
