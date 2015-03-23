@@ -1,7 +1,7 @@
 class Event
 
   def initialize(session)
-    @client_id = session[:calendar_id]
+    @calendar_id = session[:calendar_id]
     @client = Google::APIClient.new
     @client.authorization.access_token = session[:auth_token]
     @calendar = @client.discovered_api('calendar', 'v3')
@@ -34,9 +34,9 @@ class Event
   end
 
   def parse_google_data(data)
-    ActiveSupport::JSON.decode(data)['items']
+    decoded_data = ActiveSupport::JSON.decode(data)['items']
 
-    data.map do |event|
+    decoded_data.map do |event|
       g_activity_id = event['summary'].slice!(0,4).to_i
       next unless g_activity_id > 0 && event['status'] != "cancelled"
       event_start = Time.parse(event['start']['dateTime'])

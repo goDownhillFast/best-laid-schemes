@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   def events
-    @events = Event.new(session) if session
+    @events ||= Event.new(session) if session
   end
 
   def time_zone_offset

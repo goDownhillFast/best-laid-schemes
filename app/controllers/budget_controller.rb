@@ -18,6 +18,6 @@ class BudgetController < ApplicationController
     selected_events = @this_week_to_date.select do |event|
       event[:old_activity_id] === old_id && event[:start].wday === i
     end
-    selected_events.map(&:time).reduce(:+)
+    selected_events.map { |e| e[:time] }.reduce(:+)
   end
 end
